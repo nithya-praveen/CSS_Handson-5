@@ -1,0 +1,128 @@
+*
+{
+    background-color:rgb(243, 243, 11) ;
+    text-align: center;
+}
+.container1, .container2, .container3, .container4
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item1
+{
+    width: 80px;
+    height: 80px;
+    background-color:teal;
+    margin: 40px;
+    animation: myanimation1 2s linear 1s infinite alternate-reverse;
+}
+@keyframes myanimation1 
+{
+    from   
+    {
+        transform: skewx(20deg)
+    }
+    to
+    {
+        transform: skewx(-20deg);
+    }
+}
+.item2
+{
+    width: 80px;
+    height: 80px;
+    background-color:rgb(156, 156, 216);
+    margin: 40px;
+    animation: myanimation2 2s linear 1s infinite alternate-reverse;
+}
+@keyframes myanimation2 
+{
+    from
+    {   
+        transform: skewy(20deg)
+    }
+    to
+    {
+        transform:skewy(-20deg)
+    }
+}
+.item3
+{
+    width: 80px;
+    height: 80px;
+    background-color:seagreen;
+    margin: 40px;
+    animation: myanimation3 3s ease 1s infinite reverse;
+}
+@keyframes myanimation3
+{
+    from
+    {
+        transform:rotatez(360deg)
+    }
+    to
+    {
+        transform: rotatez(0deg)
+    }
+}
+.item4x
+{
+    width: 80px;
+    height: 80px;
+    margin: 40px;
+    background-color: rgb(247, 133, 34);
+    border: 2px solid grey;
+    animation: myanimation4x 2s ease 1s infinite alternate-reverse;
+}
+@keyframes myanimation4x
+{
+    from
+    {
+        transform:rotatex(50deg)
+    }
+    to
+    {
+        transform:rotatex(0deg)
+    }
+}
+.item4y
+{
+    width: 80px;
+    height: 80px;
+    margin: 40px;
+    background-color:salmon;
+    border: 2px solid grey;
+    animation: myanimation4y 2s ease 1s infinite alternate-reverse;
+}
+@keyframes myanimation4y
+{
+    from
+    {
+        transform:rotatey(70deg)
+    }
+    to
+    {
+        transform:rotatey(0deg)
+    }
+}
+.item4z
+{
+    width: 80px;
+    height: 80px;
+    margin: 40px;
+    background-color:sienna;
+    border: 2px solid grey;
+    animation: myanimation4z 2s ease 1s infinite alternate-reverse;
+}
+@keyframes myanimation4z
+{
+    from
+    {
+        transform:rotate(100deg)
+    }
+    to
+    {
+        transform:rotate(0deg)
+    }
+}
+

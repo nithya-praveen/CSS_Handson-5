@@ -1,0 +1,172 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.highway
+{
+    width: 100%;
+    height: 100vh;
+    /* border-left: 10px solid orange;
+    border-top: 10px solid white;
+    border-right: 10px solid green; */
+    background-image: url(./sky.jpg);
+    background-size: cover;
+    background-position: center;
+    position: static;
+    overflow-x: hidden;
+}
+.road
+{
+    height: 200px;
+    width: 500%;
+    display: block;
+    background-image:url(./road.jpg);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: road 5s linear infinite;
+}
+@keyframes road 
+{   
+    100%
+    {
+        transform: translatex(-3400px);
+    }
+    
+}
+.city
+{
+    height: 250px;
+    width: 500%;
+    background-image: url(./city.png);
+    position: absolute;
+    bottom: 200px;
+    left: 0px;
+    right: 0px;
+    display: block;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: city 20s linear infinite;
+}
+@keyframes city 
+{   
+    100%
+    {
+        transform: translateX(-1400px);
+    }
+}
+.car
+{
+    width: 400px;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+.car img
+{
+    width: 100%;
+    animation: car 1s linear infinite;
+}
+@keyframes car 
+{   
+    100%
+    {
+        transform: translateY(-1px);
+    }
+    50%
+    {
+        transform: translateY(1px);
+    }
+    0%
+    {
+        transform:translatey(-1px);
+    }
+}
+.wheel
+{
+    left: 50%;
+    bottom: 178px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+.wheel img
+{
+    width: 72px;
+    height: 72px;
+    animation: wheel 1s linear infinite;
+}
+.frontwheel
+{
+    position: absolute;
+    left: 80px;
+}
+.backwheel
+{
+    position: absolute;
+    left: -165px;
+}
+@keyframes wheel 
+{   
+    100%
+    {
+        transform: rotate(360deg);
+    }
+} 
+.flag
+{
+    width: 400px;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 960px;
+    bottom: 206px;
+    z-index: 2;
+}
+.flag img
+{
+    width: 70px;
+    height: 70px;
+    animation: flag 1s linear infinite;
+}
+@keyframes flag
+{   
+    100%
+    {
+        transform: translateY(-1px);
+    }
+    50%
+    {
+        transform: translateY(1px);
+    }
+    0%
+    {
+        transform:translatey(-1px);
+    }
+}
+.img
+{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right:324px;
+    top:130px;
+    background-color: transparent;
+}
+.sun
+{
+    z-index: 1;
+    animation: sun 5s linear infinite;
+}
+@keyframes sun
+{   
+    100%
+    {
+        transform: translatex(-34px);
+    }
+    
+}
